@@ -1,0 +1,206 @@
+html {
+	background-color: #fff;
+	color: #555;
+	font-size: 20px;
+	line-height: 120%;
+	font-family: sans-serif;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom:1}
+/*clear after element*/
+.clearfix:after {
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+/*using padding will allow background color
+margin will prevent background color to consume whole element*/
+section {
+	padding: 80px 0;
+}
+
+.box {
+	padding: 1%;
+}
+/*-------------------------------heading--------------------*/
+/*increased font-size should decrease font-weight*/
+h1,
+h2,
+h3 {
+	font-weight: 300;
+	/*text-transform makes all text uppercase
+	letter-spacing and word-spacing is good for headers
+	increase display presentation*/
+	text-transform: uppercase;
+}
+
+h1 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: #fff;
+	font-size: 240%;
+	word-spacing: 4px;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 180%;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+
+h3 {
+	font-size: 110%;
+	margin-bottom: 15px;
+}
+
+h2:after {
+	display: block;
+	height: 2px;
+	background-color: #e67e22;
+	/*when creating after psuedo class need to specific content*/
+	content: " ";
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+header {
+	/*background-size and background-center will control the image sizing and display*/
+	/*background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(http://www.americanbar.org/content/dam/aba/administrative/delivery_legal_services/ls_del_blueprint_image.jpg);*/
+	background-color: black;
+	background-size: cover;
+	background-position: center;
+	height: 100vh; /*100vh stands for 100% viewport*/
+	/*fixed attachment keeps background img static/ scroll through*/
+	background-attachment: fixed;
+}
+
+.hero-text-box {
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	/*translate of its height and width*/
+	transform: translate(-50%, -50%);
+}
+
+.main-nav {
+	float: right;
+	list-style: none; /*removes buttet points*/
+	margin-top: 55px;
+}
+
+.main-nav li {
+	display: inline-block; /*making the links side by side*/
+	margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	padding: 8px 0;
+	color: #fff;
+	text-decoration: none; /*removes line from link*/
+	text-transform: uppercase;
+	font-size: 90%;
+	border-bottom: 2px solid transparent;
+	/*transition must be applied to the link itself not the effect*/
+	transition: border-bottom 0.7s}
+/*border-bottom cant exist in hover/active
+if the border-bottom never existed before
+to solve issue create border-buttom transparent prior to hover/active
+*/
+.main-nav li a:hover,
+.main-nav li a:active {
+	border-bottom: 2px solid #e67e22;
+}
+
+
+/*ANIMATION*/
+.welcome {
+  display: inline-block;
+  color: #fff;
+  font-size: 400%;
+ 
+  animation-name: name;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal; /*alternate*/
+  animation-fill-mode: forwards; /*forwards*/
+  animation-play-state: running; /*paused*/
+}
+
+@keyframes name {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(200px, 0px);
+  }
+}
+
+.pic {
+  width: 100px;
+  height: 500px;
+  opacity: 0.5;
+  animation-name: img;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0,1.49,1,1.43);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes img {
+  0% {
+  	opacity: 0;
+  	transform: translate(200px, -200px);
+  }
+  90% {
+  	opacity: 0;
+  }
+  95% {
+  	opacity: .5;
+  }
+  100% {
+  	opacity: 1;
+  	transform: translate(200px, 0px);
+  }
+}
+
+
+.window {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  position: relative;
+  left: 200px;
+  top: 50px;
+}
+.blinds {
+  background-color: black;
+  height: 200px;
+  transition-property: height;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  box-shadow: 0px 10px 20px white;
+}
+.blinds:hover{
+	height: 0px;
+}
