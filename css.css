@@ -3,7 +3,7 @@ html {
 	color: #555;
 	font-size: 20px;
 	line-height: 120%;
-	font-family: sans-serif;
+	font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
 }
@@ -188,14 +188,20 @@ to solve issue create border-buttom transparent prior to hover/active
   background-color: white;
   width: 200px;
   height: 200px;
+  position: absolute;
   display: inline-block;
-  position: relative;
-  left: 200px;
-  top: 50px;
+  top: -100px;
+  right: 170px;
 }
 .blinds {
+  z-index: 2;
+  top: -100px;
+  right: 170px;
+  display: inline-block;
+  position: absolute;
   background-color: black;
   height: 200px;
+  width: 200px;
   transition-property: height;
   transition-duration: 1s;
   transition-timing-function: linear;
@@ -203,4 +209,9 @@ to solve issue create border-buttom transparent prior to hover/active
 }
 .blinds:hover{
 	height: 0px;
+}
+
+.window p {
+	text-align: center;
+	padding-top: 40px;
 }
