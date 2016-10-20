@@ -1,168 +1,148 @@
-body {
-  background-color: black;
-  font-family: monospace;
+body{
+  font-family: 'Cutive Mono', monospace;
 }
-
-.container1 {
+.welcome {
   height: 100vh;
-/*   background-color: #517abc; */
-  backgroung-color: black;
-/*   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url("https://timedotcom.files.wordpress.com/2014/03/world-trade-center.jpg");*/
 }
-.wrapper {
-  width: 700px;
-  margin: 0;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.about {
-  font-size: 80px;
-  color: white;
-}
-.img-me {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background-color: white;
-  border: none;
-  position: absolute;
-  top: -400px;
-  left: 200px;
-}
-
-.container2 {
-  height: 100vh;
-  background-color: #666;
-}
-.img-box {
-  height: 300px;
-  width: 300px;
-}
-.project-img {
-  height: 250px;
-  width: 300px;
-}
-.container3 {
-  height: 100vh;
-  background-color: #ccc;
-}
-
-
-/*nav*/
-#btn1 {
-  top: 100px;
-}
-
-#btn2 {
+.left-row{
+  position: relative;
   top: 200px;
 }
-
-#btn3 {
-  top: 300px;
-}
-div.button {
-  background-color: #ffffff;
-  color: black;
-  border: none;
-  border-radius: 30px;
-  width: 200px;
-  height: 60px;
-  position: fixed;
-  left: -165px;
-  transition: .7s ease;
-}
-
-div.button:hover {
-  background-color: #ffffff;
-  position: fixed;
-  left: -50px;
-  width: 220px;
-  border-radius: 30px;
-}
-
-div.button:active {
-  background-color: white;
-  transition: 0s;
-  color: black;
+.navtabs{
+  height: 550px;
+  overflow: auto;
 }
 .tabs{
-  color: black;
+  display: inline-block;
+  margin-left: 30px;
   font-size: 20px;
-  text-align: center;
-  position: absolute;
-  top: 20px;
-  left: 80px;
 }
-a,
 a:hover,
-a:active {
+a:visited,
+a:active,
+a:link{
   text-decoration: none;
   color: black;
 }
-
-/*Animation*/
-.about-box{
+.tab1 {
+  font-size: 18px;
+  height: 550px;
+  padding-top: 50px;
+}
+.tab2{
+  height: 550px;
+}
+.project{
   width: 320px;
-  background: #000;
-  padding-top: 10px;
-  padding-bottom: 10px;
-} 
-
-.line{
-  color: lime; 
-  font-family: "Courier";
-  font-size: 49px;
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 700px;
-  animation: type 4s steps(60, end); 
+  height: 175px;
+  display: block;
+  margin: 0 auto;
+}
+.tab3{
+  height: 550px;
 }
 
-p:nth-child(2){
-  animation: type2 4s steps(60, end);
-}
-p:nth-child(3){
-  animation: type3 7s steps(60, end);
-}
-p:nth-child(4){
-  animation: type4 12s steps(60, end);
-}
-p:nth-child(5){
-  animation: type4 18s steps(60, end);
-}
 
-span{
-  animation: blink 1s infinite;
+
+
+
+
+.id-card {
+  height: 100vh;
 }
-
-@keyframes type{ 
-  from { width: 0; } 
-} 
-
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-} 
-@keyframes type3{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-} 
-@keyframes type4{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-} 
-@keyframes type5{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-} 
-
-@keyframes blink{
-  to{opacity: .0;}
+.card{
+  height: 500px;
+  width: 320px;
+  border: 1px solid black;
+  border-radius: 20px;
+  position: relative;
+  top: 25vh;
+  display: block;
+  margin: 0 auto;
+}
+.card-title{
+  text-align: center;
+  font-size: 19px;
+  padding-top: 15px;
+}
+.left-card{
+  position: relative;
+  top: 15px;
+  left: 10px;
+}
+.image-me{
+  width: 140px;
+  height: 175px;
+}
+p{
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+.code1{
+  position: relative;
+  top: -140px;
+}
+.code2{
+  position: relative;
+  top: 10px;
+}
+.border04-top{
+  border-top: black 0.04in solid;
+  display: inline-block;
+  width: 0.5in;
+}
+.border06-top{
+  border-top: black 0.06in solid;
+  display: inline-block;
+  width: 0.5in;
+}
+.border10-top{
+  border-top: black 0.1in solid;
+  display: inline-block;
+  width: 0.5in;
+}
+.border02-bottom{
+  border-bottom: black 0.02in solid;
+  display: inline-block;
+  width: 0.5in;
+}
+.border04-bottom{
+  border-bottom: black 0.04in solid;
+  display: inline-block;
+  width: 0.5in;
+}
+.sim{
+  height: 70px;
+  width: 53px;
+  border: 1px solid black;
+  background-color: ;
+  position: relative;
+  top: -250px;
+  left: 60px; 
+  border-radius: 12px;
+}
+.sim-btm{
+  border-bottom: black 0.02in solid;
+  display: inline-block;
+  width: .53in;
+  position: relative;
+  top: 5px;
+}
+.sim-left{
+  border-left: black 0.02in solid;
+  display: inline-block;
+  height: .72in;
+  position: relative;
+  top: -49px;
+  left: 10px;
+}
+.right-box{
+  font-size: 18px;
+  position: relative;
+  top: 50px;
+  left: 5px;
+}
+.card-sub{
+  font-size: 12px;
 }
