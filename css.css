@@ -28,6 +28,7 @@ a:link{
   font-size: 18px;
   height: 550px;
   padding-top: 50px;
+  padding-right: 50px;
 }
 .tab2{
   height: 550px;
@@ -41,7 +42,10 @@ a:link{
 .tab3{
   height: 550px;
 }
-
+form{
+  padding-top: 50px;
+  padding-right: 50px;
+}
 
 
 
