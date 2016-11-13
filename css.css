@@ -6,7 +6,8 @@ body{
 }
 .left-row{
   position: relative;
-  top: 200px;
+  top: 50vh;
+  transform: translate(0, -50%);
 }
 .navtabs{
   height: 550px;
@@ -16,6 +17,7 @@ body{
   display: inline-block;
   margin-left: 30px;
   font-size: 20px;
+  font-weight: bold;
 }
 a:hover,
 a:visited,
@@ -28,7 +30,7 @@ a:link{
   font-size: 18px;
   height: 550px;
   padding-top: 50px;
-  padding-right: 50px;
+  padding-right: 20px;
 }
 .tab2{
   height: 550px;
@@ -44,7 +46,11 @@ a:link{
 }
 form{
   padding-top: 50px;
-  padding-right: 50px;
+  padding-right: 20px;
+}
+
+span{
+  font-weight: bold;
 }
 
 
@@ -60,9 +66,10 @@ form{
   border: 1px solid black;
   border-radius: 20px;
   position: relative;
-  top: 25vh;
   display: block;
   margin: 0 auto;
+  top: 50vh;
+  transform: translate(0, -50%);
 }
 .card-title{
   text-align: center;
@@ -150,3 +157,5 @@ p{
 .card-sub{
   font-size: 12px;
 }
+
+

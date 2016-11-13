@@ -1,0 +1,23 @@
+/* big tablets from 1024-1200px (widths smaller than the 1140px row) */
+/* row width is set at 1140px */
+@media only screen and (max-width: 1200px) {
+
+}
+
+
+/* landscape view of tablet 768-1023px */
+@media only screen and (max-width: 1023px) {
+
+}
+
+
+/* tablet devices from 481-767px */
+@media only screen and (max-width: 767px) {
+
+}
+
+
+/* small phones from 0 - 480px */
+@media only screen and (max-width: 480px) {
+
+}
