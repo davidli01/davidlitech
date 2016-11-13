@@ -67,11 +67,32 @@
 
 @media only screen and (max-width: 715px) {
 	.id-card {
+		height: 500px;
 		width: 100%;
 	}
 	.welcome{
+		height: 500px;
 		width: 100%;
 	}
+	.left-row{
+		top: 42vh;
+		width: 320px;
+		position: relative;
+		display: block;
+		margin: 0 auto;
+	}
+	.card{
+		height: 500px;
+		width: 320px;
+		border: 1px solid black;
+		border-radius: 20px;
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		top: 55px;
+		transform: translate(0, 0);
+	}
+
 	.tabs{
 		display: inline-block;
 		margin-left: 5px;
@@ -85,6 +106,7 @@
 		padding-right: 20px;
 	}
 	.project{
+		padding-top: 10px;
 		width: 250px;
 		height: 155px;
 		display: block;
