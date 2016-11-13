@@ -31,7 +31,7 @@
 		font-weight: bold;
 	}
 	.tab1 {
-		font-size: 17px;
+		font-size: 16px;
 		height: 550px;
 		padding-top: 20px;
 		padding-right: 20px;
@@ -41,7 +41,7 @@
 	}
 	.project{
 		width: 320px;
-		height: 175px;
+		height: 170px;
 		display: block;
 		margin: 0 auto;
 	}
@@ -52,14 +52,14 @@
 
 @media only screen and (max-width: 732px) {
 	.tab1 {
-		font-size: 17px;
+		font-size: 16px;
 		height: 550px;
 		padding-top: 20px;
 		padding-right: 20px;
 	}
 	.project{
 		width: 300px;
-		height: 175px;
+		height: 170px;
 		display: block;
 		margin: 0 auto;
 	}
@@ -112,5 +112,9 @@
 		height: 155px;
 		display: block;
 		margin: 0 auto;
+	}
+
+	footer{
+		top: 370px;
 	}
 }
