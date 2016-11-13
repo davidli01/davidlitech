@@ -74,8 +74,9 @@
 		height: 500px;
 		width: 100%;
 	}
+
 	.left-row{
-		top: 42vh;
+		top: 600px;
 		width: 320px;
 		position: relative;
 		display: block;
