@@ -1,0 +1,53 @@
+html{
+	padding: 0;
+	margin: 0;
+
+}
+body{
+	font-family: ;
+	margin: 0;
+	padding: 0;
+}
+.container{
+
+}
+.intro{
+	/*background image insert*/
+	background: linear-gradient(#800000, white);
+	/*background-color: #7d7d7d;*/
+	height: 100vh;
+	width: 100vw;	
+	margin: 0;
+	padding: 0;
+}
+.inside1{
+	width: 50vw;
+	height: 33vh;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: table;
+}
+.welcome{
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 8em;
+}
+.about{
+	background-color: #707070;
+	margin: 0;
+}
+
+.skills{
+	background-color: #646464;
+	margin: 0;
+}
+.projects{
+	background-color: #575757;	
+	margin: 0;
+}
