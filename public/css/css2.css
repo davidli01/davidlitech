@@ -4,38 +4,92 @@ html{
 
 }
 body{
-	font-family: ;
+	font-family: 'Lemon', cursive;
 	margin: 0;
 	padding: 0;
 }
-.container{
 
+.container{
+	font-family: 'Lemon', cursive;
+	font-size: 15px;
 }
 .intro{
 	/*background image insert*/
-	background: linear-gradient(#800000, white);
+	background: linear-gradient(#2ec4b6, white);
 	/*background-color: #7d7d7d;*/
 	height: 100vh;
 	width: 100vw;
 	display: flex;
 }
+.bord{
+	border: .1em solid white;
+	width: 90vw;
+	height: 90vh;
+	display: flex;
+	margin: auto;
+	opacity: 0;
+}
 .inside{
 	margin: auto;
 	color: white;
 	font-size: 8em;
+	opacity: 1;
 }
 .about{
-	background-color: #707070;
+	background-color: #2ec4b6;
 	width: 100vw;
 	height: 30vh;
+	display: flex;
+	justify-content: center;
+}
+.inside2{
+	margin: auto;
+}
+.title{
+	text-align: center;
+	font-size: 3em;
+	color: white;
+	padding: .3em;
+}
+.head,
+.quest{
+	font-size: 1.5em;
+	margin: .4em;
+	color: white;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.item{
+	color: white;
+	margin: .4em;
+	font-size: 1.5em;
+}
+.ask{
+	border-radius: 1em;
+	font-size: 1em;
+	color: white;
+	background-color: #ff9f1c;
+	font-family: inherit;
 }
 .skills{
-	background-color: #646464;
+	background-color: #ffbf69;
 	width: 100vw;
 	height: 50vh;
 }
 .projects{
-	background-color: #575757;
+	background-color: white;
 	width: 100vw;
 	height: 100vh;
 }
+
+/*
+#ff9f1c
+#ffbf69
+#ffffff
+#cbf3f0
+#2ec4b6
+*/
